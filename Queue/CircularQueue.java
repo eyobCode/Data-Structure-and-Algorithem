@@ -18,5 +18,15 @@ public class CircularQueue {
         rear=null;
         length=0;
     }
+    public boolean isEmpty(){
+        return length == 0;
+    }
+    public void Enqueue(int data){
+        ListNode newNode = new ListNode(data);
+        if (isEmpty()){
+            front=newNode;
+        }else {
 
+        }
+    }
 }
