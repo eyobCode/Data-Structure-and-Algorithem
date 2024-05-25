@@ -1,0 +1,3 @@
+class stackUsingOneQueue {
+}
+class Queue{}
