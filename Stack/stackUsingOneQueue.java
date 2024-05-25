@@ -12,6 +12,47 @@ class stackUsingOneQueue {
             q.enqueue(q.dequeue());  // Rotate the queue to move the new element to the front
         }
     }
+    public int pop(){
+        if (isEmpty()){
+            throw new RuntimeException("stack is empty");
+        }
+        return q.dequeue();
+    }
+    public int length(){
+        return q.size();
+    }
+    public boolean isEmpty(){
+        return q.isEmpty();
+    }
+    public int top(){
+        if (isEmpty()){
+            throw new RuntimeException("stack is already empty");
+        }
+        return q.front();
+    }
+
+    public static void main(String[] args) {
+        stackUsingOneQueue stack = new stackUsingOneQueue();
+
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(4);
+
+        System.out.println(stack.top());    // Output: 4
+        System.out.println(stack.pop());    // Output: 4
+        System.out.println(stack.isEmpty()); // Output: false
+
+        System.out.println(stack.top());    // Output: 3
+        System.out.println(stack.pop());    // Output: 3
+        System.out.println(stack.isEmpty()); // Output: false
+
+        stack.push(5);
+        System.out.println(stack.top());    // Output: 5
+        System.out.println(stack.pop());    // Output: 5
+        System.out.println(stack.isEmpty()); // Output: false
+    }
+
 }
 class Queue{
     private ListNode front;
@@ -31,6 +72,12 @@ class Queue{
         front = null;
         rear = null;
         legth = 0;
+    }
+    public int front(){
+        if (isEmpty()){
+            throw new RuntimeException("Empty ('-')");
+        }
+        return front.data;
     }
     public boolean isEmpty() {return legth == 0;}
     public int size(){return legth;}
