@@ -6,6 +6,7 @@ public class NumberSearchinArray {
         System.out.print("Enter the length of the array :");
         int length=scanner.nextInt();
 
+
         int[] array = new int[length];
         System.out.println("Enter " + length + " numbers:");
 

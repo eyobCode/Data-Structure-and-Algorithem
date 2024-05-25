@@ -12,6 +12,7 @@ public class Q2_stackInArray {
     public boolean isEmpty(){return top < 0;}
     public boolean isFull(){return arr.length == size();}
     public int size(){return top +1;}
+    public int peek(){return arr[top];}
 
     public void push(int data){
         if (isFull()){
@@ -28,10 +29,6 @@ public class Q2_stackInArray {
         top--;
         return temp;
     }
-    public int peek(){
-        return arr[top];
-    }
-
     public static void main(String[] args) {
         Q2_stackInArray stack=new Q2_stackInArray(3);
         stack.push(1);
