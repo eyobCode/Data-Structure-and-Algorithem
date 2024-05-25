@@ -35,13 +35,17 @@ public class mergeSort {
             i++;
         }
     }
+    public static void print(int[] arr){
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
 
     public static void main(String[] args) {
         int[] arr = {9, 8, 7, 6, 5, 4, 3, 2, 1};
         int[] temp = new int[arr.length]; // Corrected length of temp array
         Sort(arr, temp, 0, arr.length - 1); // Corrected high parameter
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
+        print(arr);
+
     }
 }
