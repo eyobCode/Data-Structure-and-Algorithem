@@ -1,4 +1,17 @@
 class stackUsingOneQueue {
+    private Queue q;
+
+
+    stackUsingOneQueue(){
+        q=new Queue();
+    }
+    void push(int data){
+        q.enqueue(data); //fist enqueue in the queue
+
+        for (int i = 1; i < q.size(); i++) {
+            q.enqueue(q.dequeue());  // Rotate the queue to move the new element to the front
+        }
+    }
 }
 class Queue{
     private ListNode front;
@@ -22,7 +35,7 @@ class Queue{
     public boolean isEmpty() {return legth == 0;}
     public int size(){return legth;}
     public int dequeue(){
-        if (isEmpty()){throw new RuntimeException("Queue is empty.")}
+        if (isEmpty()){throw new RuntimeException("Queue is empty.");}
         int temp = front.data;
         front=front.next;
         legth--;
