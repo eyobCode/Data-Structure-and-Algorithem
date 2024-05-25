@@ -22,6 +22,6 @@ public class GenerateBinaryNumbers {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(GenerateBinary(3)));
+        System.out.println(Arrays.toString(GenerateBinary(5)));
     }
 }
