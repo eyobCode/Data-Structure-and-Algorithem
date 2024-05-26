@@ -46,38 +46,52 @@ public class SelectionSortStack {
             }
             return top.data;
         }
-        public void selectioSort(){
+        public void selectionSort(){
             SelectionSortStack sortStack=new SelectionSortStack();
             SelectionSortStack tempStack=new SelectionSortStack();
             while (!isEmpty()){
                 int min = pop();
+
                 while (!isEmpty()){
+
                     int temp = pop();
                     if (temp < min){
-                        tempStack.push(temp);
+
+                        tempStack.push(min);
                         min=temp;
+                    }else {
+                        tempStack.push(temp);
                     }
                 }
+                sortStack.push(min);
+
+                while (!tempStack.isEmpty()){
+                    push(tempStack.pop());
+                }
+            }
+            while (!sortStack.isEmpty()){
+                push(sortStack.pop());
             }
     }
+    public static void main(String[] args) {
+        SelectionSortStack sll = new SelectionSortStack();
 
-        public static void main(String[] args) {
-            SelectionSortStack  sll = new SelectionSortStack ();
+        System.out.println(sll.isEmpty()); // true
 
-            System.out.println(sll.isEmpty());// true
+        sll.push(34);
+        sll.push(3);
+        sll.push(31);
+        sll.push(98);
+        sll.push(92);
+        sll.push(23);
 
-            sll.push(1); // insert 1
-            sll.push(2); // insert 2
-            sll.push(3); // insert 3
-            sll.push(4); // insert 4
+        System.out.println("Original stack length: " + sll.length()); // length 6
+        System.out.println("Original stack top: " + sll.peek()); // 23
 
+        sll.selectionSort();
 
-
-            System.out.println(sll.length);   // legth 4
-            System.out.println(sll.pop());    // 4
-            System.out.println(sll.length);   // 3
-            System.out.println(sll.peek());   // 3
-            System.out.println(sll.isEmpty());// false
+        System.out.println("Sorted stack length: " + sll.length()); // length 6
+        System.out.println("Sorted stack top: " + sll.peek()); // 3 (since it's sorted in ascending order)
 
         }
     }
