@@ -53,7 +53,7 @@ public class InsertionSort {
         InsertionSort insertionStack = new InsertionSort();
         while (!isEmpty()){
             int temp = pop();
-            while (!insertionStack.isEmpty() && insertionStack.peek() < temp){
+            while (!insertionStack.isEmpty() && insertionStack.peek() > temp){
                 push(insertionStack.pop());
             }
             insertionStack.push(temp);
@@ -82,7 +82,7 @@ public class InsertionSort {
         sll.Insertion();
 
         System.out.println("Sorted stack length: " + sll.length()); // length 6
-        System.out.println("Sorted stack top: " + sll.peek()); // 98 (since it's sorted in ascending order)
+        System.out.println("Sorted stack top: " + sll.peek()); // 3 (since it's sorted in ascending order)
 
     }
 }
