@@ -9,6 +9,8 @@ public class MaxValue {
         }
         System.out.println(maxi);
     }
-
-
+    public static void main(String[] args) {
+        int[] num = {10, 1, 2, 3, 4, 5, 6};
+        maxmimu(num);
+    }
 }
