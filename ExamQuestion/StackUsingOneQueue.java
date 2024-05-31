@@ -1,9 +1,9 @@
-class stackUsingOneQueue {
-    private Queue q;
+class StackUsingOneQueue {
+    private QueueS q;
 
 
-    stackUsingOneQueue(){
-        q=new Queue();
+    StackUsingOneQueue(){
+        q=new QueueS();
     }
     void push(int data){
         q.enqueue(data); //fist enqueue in the queue
@@ -32,7 +32,7 @@ class stackUsingOneQueue {
     }
 
     public static void main(String[] args) {
-        stackUsingOneQueue stack = new stackUsingOneQueue();
+        StackUsingOneQueue stack = new StackUsingOneQueue();
 
         stack.push(1);
         stack.push(2);
@@ -54,7 +54,8 @@ class stackUsingOneQueue {
     }
 
 }
-class Queue{
+class QueueS {
+    public boolean length;
     private ListNode front;
     private ListNode rear;
     private int legth;

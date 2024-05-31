@@ -1,6 +1,6 @@
 import java.util.EmptyStackException;
 
-public class InsertionSort {
+public class insertionSortStack {
 
     private ListNode top;
     private int length;
@@ -16,7 +16,7 @@ public class InsertionSort {
         }
 
     }
-    private InsertionSort(){
+    private insertionSortStack(){
         this.top = null;
         length = 0;
     }
@@ -50,7 +50,7 @@ public class InsertionSort {
     // Insertion Sort
 
     public void Insertion(){
-        InsertionSort insertionStack = new InsertionSort();
+        insertionSortStack insertionStack = new insertionSortStack();
         while (!isEmpty()){
             int temp = pop();
             while (!insertionStack.isEmpty() && insertionStack.peek() > temp){
@@ -65,7 +65,7 @@ public class InsertionSort {
     }
 
     public static void main(String[] args) {
-        InsertionSort sll = new InsertionSort();
+        insertionSortStack sll = new insertionSortStack();
 
         System.out.println(sll.isEmpty()); // true
 
@@ -86,5 +86,3 @@ public class InsertionSort {
 
     }
 }
-
-

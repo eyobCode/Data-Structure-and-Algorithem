@@ -1,6 +1,6 @@
 import java.util.EmptyStackException;
 
-public class stackLinkedList {
+public class StackLinkedList {
 
     private ListNode top;
     private int length;
@@ -16,7 +16,7 @@ public class stackLinkedList {
         }
 
     }
-    private stackLinkedList(){
+    StackLinkedList(){
         this.top = null;
         length = 0;
     }
@@ -49,7 +49,7 @@ public class stackLinkedList {
     }
 
     public static void main(String[] args) {
-        stackLinkedList sll = new stackLinkedList();
+        StackLinkedList sll = new StackLinkedList();
 
         System.out.println(sll.isEmpty());// true
 

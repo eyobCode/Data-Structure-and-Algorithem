@@ -19,6 +19,12 @@ public class AddingOrUpdatingArray {
 
     }
 
+    public static void main(String[] args) {
+        AddingOrUpdatingArray aa = new AddingOrUpdatingArray();
+
+        aa.arrayDemo();
+    }
+
 
 
 
