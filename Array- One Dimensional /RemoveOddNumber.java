@@ -1,5 +1,31 @@
-public class RemoveOddNumber {
-    public static void main(String[] args) {
+import java.util.Arrays;
 
+public class RemoveOddNumber {
+        public static int[] removeOdd(int [] arr){
+            int EvenNumber = 0;
+
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 == 0){
+
+                    EvenNumber++;
+
+                }
+            }
+            int[] result =  new int[EvenNumber];
+            int indx = 0;
+            for (int i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 == 0 ){
+                    result[indx] = arr[i];
+                    indx++;
+                }
+            }
+            return result;
+
+        }
+        public static void main(String[] args) {
+            int[]  arr = {1,2,3,4,5,6,7};
+
+            System.out.println(Arrays.toString(removeOdd(arr)));
+        }
     }
-}
+
