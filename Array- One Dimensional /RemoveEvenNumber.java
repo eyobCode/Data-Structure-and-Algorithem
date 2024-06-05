@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class RemoveEvenNumber {
     public static int[] removeEven(int [] arr){
-        int oddNumber = 0;
+        int oddNumber = 0; //count odd number
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] % 2 != 0){
