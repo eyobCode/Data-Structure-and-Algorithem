@@ -44,7 +44,7 @@ public class BinaryTree {
         inOrder(root.right);
     }
     public static void main(String[] args) {
-        BinaryTree bt=new BinaryTree();
+        BinaryTree bt = new BinaryTree();
         bt.CreateBinaryTree();
         bt.inOrder(bt.root);
     }

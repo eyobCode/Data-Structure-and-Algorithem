@@ -1,5 +1,6 @@
 import java.util.Arrays;
 
+
 public class RemoveOddNumber {
         public static int[] removeOdd(int [] arr){
             int EvenNumber = 0;
