@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13a3ed7c-4eaa-4aa4-963b-19594b0312e2" name="Changes" comment="sd">
-      <change beforePath="$PROJECT_DIR$/Array- One Dimensional /RemoveEvenNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/Array- One Dimensional /RemoveEvenNumber.java" afterDir="false" />
+    <list default="true" id="13a3ed7c-4eaa-4aa4-963b-19594b0312e2" name="Changes" comment="Remove even number from array">
+      <change beforePath="$PROJECT_DIR$/Array- One Dimensional /ReverseArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/Array- One Dimensional /ReverseArray.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
   "keyToString": {
     "Application.AddingOrUpdatingArray.executor": "Run",
     "Application.RemoveEvenNumber.executor": "Run",
+    "Application.ReverseArray.executor": "Run",
     "Application.findMinimum.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -71,12 +72,21 @@
       <option name="project" value="LOCAL" />
       <updated>1728486193100</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Remove even number from array">
+      <option name="closed" value="true" />
+      <created>1728489424764</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728489424764</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="s" />
     <MESSAGE value="sd" />
-    <option name="LAST_COMMIT_MESSAGE" value="sd" />
+    <MESSAGE value="Remove even number from array" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove even number from array" />
   </component>
 </project>
