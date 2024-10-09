@@ -10,7 +10,7 @@ public class AddingOrUpdatingArray {
         }
         System.out.println();
     }
-    public void arrayDemo(){
+    public void arrayDemo() {
 
         // Declaration and Initialization
 

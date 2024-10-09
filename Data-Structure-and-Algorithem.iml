@@ -17,6 +17,7 @@
       <sourceFolder url="file://$MODULE_DIR$/out" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/r" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Random Number Generator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Data Structure and Algorithm" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
